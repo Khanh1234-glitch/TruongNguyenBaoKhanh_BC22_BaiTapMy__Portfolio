@@ -1,0 +1,255 @@
+    header {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .logo i {
+        color: green;
+        font-size: 2.5rem;
+    }
+    
+    .logo span {
+        font-size: 2rem;
+    }
+    
+    .menu li {
+        margin: 0 15px;
+    }
+    
+    .menu li::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 5px;
+        background-color: green;
+    }
+    
+    .menu li.active::after {
+        width: 100%;
+    }
+    
+    .menu li:hover::after {
+        width: 100%;
+        transition: 0.5s;
+    }
+    /* carousel */
+    
+    .carousel-item {
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .carousel-item:nth-child(1) {
+        background-image: url("./../img/finland.jpg");
+    }
+    
+    .carousel-item:nth-child(2) {
+        background-image: url("./../img/mountains.jpg");
+    }
+    
+    .carousel-item:nth-child(3) {
+        background-image: url("./../img/mountains-1.jpg");
+    }
+    
+    .carousel-caption .carousel-thumb img {
+        /* width: 150px; */
+        border-radius: 50%;
+    }
+    
+    .carousel-thumb {
+        width: 140px;
+        margin: auto;
+    }
+    
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    #project {
+        padding: 48px 0;
+    }
+    
+    .container__project {
+        margin: 0 103.5px;
+        padding: 48px 15px;
+        text-align: center;
+    }
+    
+    .card {
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        box-shadow: 5px 5px 5px #888888;
+        border-radius: 10px;
+    }
+    
+    .card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card-body h4 {
+        font-size: 16px;
+    }
+    
+    .card:hover {
+        border: 1px solid green;
+        color: green;
+        transition: 0.5s all;
+    }
+    
+    .overlay {
+        background: url(./../img/3.jpg) no-repeat center;
+        background-size: cover;
+        padding: 100px 0 120px;
+        background-attachment: fixed;
+        position: relative;
+        color: white;
+    }
+    
+    .container__overlay {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 103.5px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .card__overlay {
+        margin: 48px 0 0;
+        padding: 16px 0 0;
+        width: 1110px;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .overlay__item {
+        padding: 40px 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, .1);
+        border: 1px solid rgba(255, 255, 255, .1);
+        backdrop-filter: blur(3px);
+        transition: transform .5s;
+    }
+    
+    .overlay__item i {
+        font-size: 48px;
+        color: #35a22c;
+    }
+    
+    .overlay__item h4 {
+        font-size: 20px;
+        margin: 0 0 8px;
+        padding: 25px 0 0;
+    }
+    
+    .overlay__item p {
+        font-size: 16px;
+        margin: 0 0 16px;
+        padding: 15px 0 0;
+    }
+    
+    .overlay__item:hover {
+        border: 1px solid white;
+        background-color: black;
+        transition: all 0.5s;
+    }
+    
+    .award {
+        padding: 70px 0;
+        background-image: url(./../img/memphis_3.png);
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+        background-position: bottom left;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container-lg {
+        width: 1140px;
+        padding: 0 15px;
+        margin: 0 103.5px;
+        font-size: 16px;
+    }
+    
+    .award__left {
+        background: rgba(255, 255, 255, .25);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, .18);
+        backdrop-filter: blur(3px);
+        box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+        padding: 45px;
+    }
+    
+    .award__right {
+        padding: 45px 0;
+    }
+    
+    .award__right .row .col__award img {
+        width: 103px;
+    }
+    
+    .award__right .row .col__award {
+        width: 133px;
+    }
+    
+    .end {
+        background-color: #222;
+        color: #292529;
+        text-align: center;
+        padding: 48px 0;
+    }
+    
+    .footer__copies {
+        border-top: 1px solid #454545;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    
+    .footer__copies p {
+        color: #aaa;
+    }
+    
+    .footer__main a {
+        text-decoration: none;
+        color: #aaa;
+        margin-right: 10px;
+        background-color: transparent;
+    }
+    
+    .footer__main a i {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+        border-radius: 50%;
+        border: 1px solid #454545;
+        transition: all .5s;
+    }
+    
+    .footer__main a i:hover {
+        color: #35a22c;
+        border-color: #35a22c;
+    }
+    
+    .footer__copies a {
+        color: #aaa;
+        text-decoration: none;
+    }
+    
+    .footer__copies a:hover {
+        color: #35a22c;
+    }
+    
+    .container__footer__end {
+        margin: 0 103.5px;
+        padding: 0 15px;
+    }
